@@ -2,6 +2,22 @@
 
 Basic game structure, including Input Handler, Resource Loader and Bitmap Font rendering. Desktop only.
 
+### Setup (Mac and Linux)
+
+1. Download Eclipse
+
+1. Install the Gradle plugin. It's needed to build Libgdx projects
+
+1. Clone or otherwise download this repository
+
+1. Open Eclipse and go to File -> Import. In the Import screen, select Gradle Project and click Next
+
+1. In the next screen, hit Browse and locate the project directory. Then, click Build Model and wait for it to finish. Select all 3 directories and click Finish
+
+1. To run the game, go to Eclipse's Run Configurations. On the left menu, select Java Application and click New Launch Configuration. In the Project field, click Browse and select `base-template-desktop`. As the Main Class, select `DesktopLauncher - com.lucasdnd.basetemplate.desktop`
+
+### Features
+
 #### Input
 
 - Movement keys
