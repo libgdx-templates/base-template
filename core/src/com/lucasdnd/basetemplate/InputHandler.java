@@ -54,8 +54,6 @@ public class InputHandler implements InputProcessor, ControllerListener {
 	@Override
 	public boolean keyUp(int keycode) {
 		
-		// When releasing keys, reset the key delay so they can be pressed again immediately
-		
 		if (keycode == Keys.UP) {
 			upPressed = false;
 		} else if (keycode == Keys.LEFT) {
@@ -66,6 +64,7 @@ public class InputHandler implements InputProcessor, ControllerListener {
 			rightPressed = false;
 		}
 		
+		// When releasing the action key, reset the key delay so they can be pressed again immediately
 		if (keycode == Keys.E) {
 			ePressed = false;
 			actionDelay = 0;
